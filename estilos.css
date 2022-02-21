@@ -1,0 +1,173 @@
+ :root {
+  --principal1: #90b665;
+  --modal1 : linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(106,106,106,0.7906512946975666) 55%, rgba(111,119,121,1) 100%);
+  --secondary1: rgb(151, 62, 59);
+ }
+ 
+ *{
+  box-sizing: border-box;
+ }
+ 
+ a{
+  text-decoration: none;
+  color: black;
+ }
+ 
+ body{
+  margin: 0px;
+  font-family: 'Source Sans Pro', sans-serif;
+ }
+ 
+ header.header-responsive{
+  margin: 0px;
+  width: 100%;
+ 
+ }
+ 
+ div.contacto{
+  margin: 0px;
+  background-color: var(--principal1);
+  cursor: pointer;
+  padding-top: 2% ;
+ }
+ 
+ div.contacto h3{
+  text-align: right;
+  padding-right: 1.8vw;
+  font-size: 1vw;
+  margin: 0px;
+  position: relative;
+  bottom: 1vw;
+ }
+ 
+ .show_modal{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgb(192, 77, 11) 0%, rgba(212, 134, 31, 0.791) 55%, rgb(173, 171, 46) 100%);
+  padding: 10% 20% 0% 20%;
+ }
+ 
+ form.order{
+  display: flex;
+  flex-direction: column;
+  color: aliceblue;
+  width: 40%;
+  background-color: var(--secondary1);
+  padding: 5%;
+  margin-left: 30%;
+  font-size: 1.2vw;
+  border-radius: 20px;
+ }
+ 
+ .modal-title{
+  color: aliceblue;
+  font-size: 2vw;
+ }
+ 
+ form.order button{
+  width: 20%;
+  margin-top: 5%;
+  position: relative;
+  left: 80%;
+  font-size: 1vw;
+  text-align: center;
+  cursor: pointer;
+  width: 25%;
+ }
+ 
+ .mark-closed{
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  font-size: 3vw;
+  cursor: pointer;
+  color: azure;
+ }
+ 
+ .mark-closed:hover{
+  border: 1px solid black;
+ }
+ 
+ .closemodal{
+  display: none;
+ }
+ 
+ .principal-header-account{
+ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+ }
+ 
+ .div-logo-image{
+  width: 18%;
+  margin-top: 0.5%;
+ }
+ 
+ .div-buscador-header{
+  margin-top: 1.5%;
+  position: relative;
+  right: 24%;
+  padding: 1%;
+  width: 18%;
+ }
+ 
+ div.div-buscador-header input{
+  width: 100%;
+  padding: 4%;
+ }
+ 
+ .glass{
+  position: absolute;
+  right: 8%;
+  top: 34%;
+ } 
+
+ .conten-imagen-gal{
+  position: relative;
+ }
+ 
+ .img-gal{
+  display: block;
+  margin: auto;
+  border-radius: 20px; 
+ }
+ 
+ .texto-img{
+  background-color: rgba(0,0,0);
+  opacity: 0.75;
+  position: absolute;
+  width: 75.7%;
+  left: 12.2%;
+  height: 100%;
+  display: none;
+  border-radius: 20px;
+ }
+ 
+ .texto-img p{
+  text-align: center;
+  color: aliceblue;
+  font-size: 1vw;
+  padding: 5% 0px 0px 0px;
+ }
+ 
+ .conten-imagen-gal:hover .texto-img{
+  display: block;
+  cursor: pointer;
+ }
+ 
+ .imgtex-gal{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1
+ }
+ 
+ .conten-imagen-gal:hover .texto-img{
+  display: block;
+ }
+ 
